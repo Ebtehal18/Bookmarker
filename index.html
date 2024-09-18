@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+     <link rel="shortcut icon" href="images/bookmark.png" type="image/x-icon">
+     <!-- font style -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+     
+      <!-- fontawsome -->
+       <link rel="stylesheet" href="css/all.min.css">
+       <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- main stylesheet -->
+       <link rel="stylesheet" href="css/style.css">
+    <title>Bookmarker</title>
+</head>
+<body class="position-relative vh-100">
+    <!----================ main ======================-->
+<main class="text-center container py-5">
+        <h1 class="py-2">Bookmarker</h1>
+        <div class="body py-4 mt-5">
+            <h2> <i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></h2>
+            <div class="inputs text-start row g-4 ">
+            <div class="col-md-12">
+                <label for="siteName"><i class="fa-solid fa-book-bookmark pe-2"></i> Site Name
+                </label>
+              <input type="text" id="siteName" class="form-control mt-2" placeholder="Bookmark Name" oninput="validation(this)">
+                
+            </div>
+            <div class="col-md-12">
+                <label for="websiteUrl"><i class="fa-solid fa-link pe-2"></i>Site URL
+                </label>
+                <input type="text" id="websiteUrl" class="form-control mt-2" placeholder="Website URL" oninput="validation(this)">
+            </div>
+            <button class="btn px-5 mx-auto"  onclick="addWebsites()">Submit</button>
+            </div>
+            <div class="row content mt-4 ">
+                <div class="col-md-12 mt-4  content_head">
+                <div class="inner-content d-flex justify-content-around p-2 bg-light">
+                    <span>index</span>
+                <span>Website Name</span>
+                <span>Visit</span>
+                <span>Delete</span>
+                </div>
+                </div>
+            </div>
+            <div class="row" id="rowBody">
+            </div>
+        </div>
+</main>
+  <!----================ modal ======================-->
+<div class="overlay position-fixed top-0 start-0 end-0 bottom-0 w-100  d-none w-100 h-100"id="overlay" onclick="closeModal()"></div>
+<div class="warning position-absolute p-4 shadow-lg bg-white rounded-2 translate-middle top-50 start-50 d-none"id="warning">
+    <div class="heading d-flex justify-content-between mb-4">
+        <div class="circles d-flex">
+            <div class="circle-red rounded-circle me-2"></div>
+            <div class="circle-yellow rounded-circle me-2"></div>
+            <div class="circle-green rounded-circle me-2"></div>
+        </div>
+        <button class="border-0 bg-transparent" onclick="closeModal()"><i class="fa-solid fa-xmark close fs-3"></i></button>
+    </div>
+    <p>Site Name or Url is not valid, Please follow the rules below :</p>
+    <div class="warning_phrase d-flex align-items-center">
+        <i class="fa-regular fa-circle-right p-2"></i><p> Site name must contain at least 3 characters
+        </p>
+    </div>
+    <div class="warning_phrase d-flex align-items-center mt-2">
+        <i class="fa-regular fa-circle-right p-2"></i><p> Site URL must be a valid one
+        </p>
+    </div>
+</div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
