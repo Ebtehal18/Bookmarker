@@ -1,15 +1,19 @@
 # Bookmarkers App
 
 ## Description
-Bookmarkers is a web application that allows users to manage their favorite websites. Users can add website names and URLs, validate the inputs for accuracy, visit the stored websites directly, and delete bookmarks they no longer need. This project emphasizes functionality and input validation to ensure a smooth user experience.
+Bookmarkers is a web application that allows users to manage their favorite websites. Users can add website names and URLs, validate the inputs for accuracy, visit the stored websites directly, and delete 
+bookmarks they no longer need. This project emphasizes functionality and input validation to ensure a smooth user experience.
+
 ---
 ## Description
 Bookmarkers is a CRUD (Create, Read, Update, Delete) web application that allows users to manage their favorite websites. Users can add website names and URLs, validate the inputs for accuracy, visit the stored websites directly, and delete bookmarks they no longer need. This project emphasizes functionality and input validation to ensure a smooth user experience.
+
 ---
 
 ## Live Version
 Check out the live version of the Bookmarkers app here:  
-[Bookmarkers App Live](https://yourusername.github.io/bookmarkers)  
+[Bookmarkers App Live](https://ebtehal18.github.io/Bookmarker/)  
+
 ---
 
 ## Features
