@@ -34,14 +34,6 @@ Check out the live version of the Bookmarkers app here:
 
 ---
 
-## Features
-- **Add Bookmarks**: Users can add a website name and its URL.
-- **Visit Bookmarks**: Direct links allow users to navigate to their saved websites.
-- **Delete Bookmarks**: Users can remove unwanted bookmarks with a single click.
-- **Input Validation**: Feedback ensures that the website name and URL are entered correctly.
-- **Dynamic UI**: Updates the list of bookmarks instantly without refreshing the page.
-
----
 
 ## Technologies Used
 - **HTML**: Structure of the application.
